@@ -1,9 +1,10 @@
-const startMins = 1;
+const startMins = 4;
 let time = startMins * 60;
 let timerInterval;
 
-const timer = document.getElementById('rare-cooked');
-const startButton = document.getElementById('rare');
+const timer = document.getElementById('timer');
+const startButton = document.getElementById('well-done');
+const sound = new Audio('../assets/bip-sound.mp3');
 
 startButton.addEventListener('click', () => {
     if (timerInterval) {
@@ -21,6 +22,7 @@ startButton.addEventListener('click', () => {
 
         if (time < 0) {
             clearInterval(timerInterval);
+            sound.play();
         }
     }, 1000);
 });

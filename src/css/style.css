@@ -1,37 +1,62 @@
 body{
-    font-family: Arial, sans-serif;
+    font-family: 'Comic Sans MS', cursive, sans-serif; 
     margin: 0;
     padding: 0;
-    background-color: #f7a9a9bb;
+    background-color: #fff0f5;
+    background-image: url('../assets/background.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); 
+    border-radius: 15px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 h1{
     text-align: center;
-    color: #ffffff;
+    color: #ff69b4; 
     margin-top: 50px;
+    font-family: 'Comic Sans MS', cursive, sans-serif; 
 }
 
 button{
-    background-color: #868686;
+    background-color: #ffb6c1; 
     color: white;
-    padding: 5px 10px;
+    padding: 10px 20px; 
     border: 2px solid #ffffff;
+    border-radius: 10px; 
     cursor: pointer;
     margin-top: 20px;
-    display: flex;
-    margin: 50px auto 20px auto;
+    display: block;
+    margin: 0 auto 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 p{
     text-align: center;
-    color: #333;
+    color: #ff69b4;
     margin-top: 20px;
+    font-family: 'Comic Sans MS', cursive, sans-serif; 
 }
 
 .timer{
     text-align: center;
     color: #333;
     margin-top: 20px;
+    background-color: #ffe4e1; 
+    border: 2px solid #ffb6c1; 
+    border-radius: 15px; 
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    font-size: 1.2em; 
 }
-
 

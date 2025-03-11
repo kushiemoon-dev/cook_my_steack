@@ -19,6 +19,8 @@ body{
     background-color: rgba(255, 255, 255, 0.8); 
     border-radius: 15px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    width: 90%; 
+    max-width: 600px; 
 }
 
 h1{
@@ -58,5 +60,35 @@ p{
     padding: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     font-size: 1.2em; 
+}
+
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5em; 
+    }
+
+    button {
+        width: 100%; 
+        padding: 15px; 
+    }
+
+    .timer {
+        font-size: 1em; 
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.2em; 
+    }
+
+    button {
+        padding: 10px; 
+    }
+
+    .timer {
+        font-size: 0.9em; 
+    }
 }
 

@@ -5,6 +5,7 @@ let timerInterval;
 const timer = document.getElementById('timer');
 const startButton = document.getElementById('well-done');
 const sound = new Audio('../assets/bip-sound.mp3');
+const message = document.getElementById('message');
 
 startButton.addEventListener('click', () => {
     if (timerInterval) {
@@ -23,6 +24,7 @@ startButton.addEventListener('click', () => {
         if (time < 0) {
             clearInterval(timerInterval);
             sound.play();
+            message.innerHTML = "Time to eat !";
         }
     }, 1000);
 });

@@ -1,10 +1,10 @@
-const startMins = 4;
+const startMins = 2.5;
 let time = startMins * 60;
 let timerInterval;
 
 const timer = document.getElementById('timer');
-const startButton = document.getElementById('well-done');
-const sound = new Audio('../assets/bip-sound.mp3');
+const startButton = document.getElementById('medium');
+const sound = new Audio('bip-sound.mp3');
 const message = document.getElementById('message');
 
 startButton.addEventListener('click', () => {

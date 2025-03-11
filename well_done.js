@@ -1,10 +1,10 @@
-const startMins = 0.10;
+const startMins = 4;
 let time = startMins * 60;
 let timerInterval;
 
 const timer = document.getElementById('timer');
-const startButton = document.getElementById('rare');
-const sound = new Audio('../assets/bip-sound.mp3');
+const startButton = document.getElementById('well-done');
+const sound = new Audio('bip-sound.mp3');
 const message = document.getElementById('message');
 
 startButton.addEventListener('click', () => {
@@ -17,15 +17,14 @@ startButton.addEventListener('click', () => {
 
         min = min < 10 ? `0${min}` : min;
         sec = sec < 10 ? `0${sec}` : sec; 
+
         timer.innerHTML = `${min}:${sec}`;
-        timer.classList.add('timer');
         time--;
 
         if (time < 0) {
             clearInterval(timerInterval);
-            message.innerHTML = "Time to eat !";
             sound.play();
-            message.classList.add('timer');
+            message.innerHTML = "Time to eat !";
         }
     }, 1000);
 });
